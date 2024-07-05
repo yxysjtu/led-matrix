@@ -24,6 +24,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32G0xx/Include"
   "../Drivers/CMSIS/Include"
+  "../lib"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/stm32g0xx_hal_msp.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj"
@@ -66,9 +67,12 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32G0xx/Include"
   "../Drivers/CMSIS/Include"
+  "../lib"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/main.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj"
+  "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
+  "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -86,6 +90,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32G0xx/Include"
   "../Drivers/CMSIS/Include"
+  "../lib"
   )
 
 # Targets to which this target links.

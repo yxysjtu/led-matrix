@@ -393,6 +393,32 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.s"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c.s
 
+CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
+CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj: ../lib/LED_Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\lib\LED_Matrix.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\LED_Matrix.cpp
+
+CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.i"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\LED_Matrix.cpp > CMakeFiles\project1_v0.elf.dir\lib\LED_Matrix.cpp.i
+
+CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.s"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\LED_Matrix.cpp -o CMakeFiles\project1_v0.elf.dir\lib\LED_Matrix.cpp.s
+
+CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
+CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj: ../lib/WS2812.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\lib\WS2812.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\WS2812.cpp
+
+CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.i"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\WS2812.cpp > CMakeFiles\project1_v0.elf.dir\lib\WS2812.cpp.i
+
+CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\WS2812.cpp -o CMakeFiles\project1_v0.elf.dir\lib\WS2812.cpp.s
+
 # Object files for target project1_v0.elf
 project1_v0_elf_OBJECTS = \
 "CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj" \
@@ -419,7 +445,9 @@ project1_v0_elf_OBJECTS = \
 "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj" \
-"CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj"
+"CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj" \
+"CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj" \
+"CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
 
 # External object files for target project1_v0.elf
 project1_v0_elf_EXTERNAL_OBJECTS =
@@ -449,9 +477,11 @@ project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj
+project1_v0.elf: CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj
+project1_v0.elf: CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/build.make
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable project1_v0.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable project1_v0.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project1_v0.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/project1_v0.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/project1_v0.bin"

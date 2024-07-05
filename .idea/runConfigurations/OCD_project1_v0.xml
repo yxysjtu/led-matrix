@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration name="OCD project1_v0" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project1_v0" TARGET_NAME="project1_v0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project1_v0" RUN_TARGET_NAME="project1_v0.elf">
-    <openocd gdb-port="3333" telnet-port="4444" reset-type="INIT" download-type="ALWAYS" />
+  <configuration default="false" name="OCD project1_v0" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project1_v0" TARGET_NAME="project1_v0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project1_v0" RUN_TARGET_NAME="project1_v0.elf">
+    <openocd gdb-port="3333" telnet-port="4444" board-config="C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
     <method v="2">
       <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
     </method>

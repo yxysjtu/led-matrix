@@ -799,6 +799,60 @@ Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.s
 .PHONY : Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.s
 
+lib/LED_Matrix.obj: lib/LED_Matrix.cpp.obj
+
+.PHONY : lib/LED_Matrix.obj
+
+# target to build an object file
+lib/LED_Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj
+.PHONY : lib/LED_Matrix.cpp.obj
+
+lib/LED_Matrix.i: lib/LED_Matrix.cpp.i
+
+.PHONY : lib/LED_Matrix.i
+
+# target to preprocess a source file
+lib/LED_Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.i
+.PHONY : lib/LED_Matrix.cpp.i
+
+lib/LED_Matrix.s: lib/LED_Matrix.cpp.s
+
+.PHONY : lib/LED_Matrix.s
+
+# target to generate assembly for a file
+lib/LED_Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.s
+.PHONY : lib/LED_Matrix.cpp.s
+
+lib/WS2812.obj: lib/WS2812.cpp.obj
+
+.PHONY : lib/WS2812.obj
+
+# target to build an object file
+lib/WS2812.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
+.PHONY : lib/WS2812.cpp.obj
+
+lib/WS2812.i: lib/WS2812.cpp.i
+
+.PHONY : lib/WS2812.i
+
+# target to preprocess a source file
+lib/WS2812.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.i
+.PHONY : lib/WS2812.cpp.i
+
+lib/WS2812.s: lib/WS2812.cpp.s
+
+.PHONY : lib/WS2812.s
+
+# target to generate assembly for a file
+lib/WS2812.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s
+.PHONY : lib/WS2812.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -881,6 +935,12 @@ help:
 	@echo ... Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.obj
 	@echo ... Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.i
 	@echo ... Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.s
+	@echo ... lib/LED_Matrix.obj
+	@echo ... lib/LED_Matrix.i
+	@echo ... lib/LED_Matrix.s
+	@echo ... lib/WS2812.obj
+	@echo ... lib/WS2812.i
+	@echo ... lib/WS2812.s
 .PHONY : help
 
 

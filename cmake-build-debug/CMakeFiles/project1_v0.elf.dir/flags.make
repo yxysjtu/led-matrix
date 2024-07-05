@@ -8,17 +8,17 @@ ASM_FLAGS = -g   -mcpu=cortex-m0 -mthumb -mthumb-interwork -ffunction-sections -
 
 ASM_DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include 
+ASM_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib 
 
 C_FLAGS = -g   -mcpu=cortex-m0 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
 
 C_DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
 
-C_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include 
+C_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib 
 
 CXX_FLAGS = -g   -mcpu=cortex-m0 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu++17
 
 CXX_DEFINES = -DDEBUG -DSTM32G030xx -DUSE_HAL_DRIVER
 
-CXX_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include 
+CXX_INCLUDES = -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Inc\Legacy -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Device\ST\STM32G0xx\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\CMSIS\Include -IC:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib 
 

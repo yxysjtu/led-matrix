@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj"
+  "CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
+  "CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
   "project1_v0.elf"
   "project1_v0.elf.manifest"
   "project1_v0.elf.pdb"
