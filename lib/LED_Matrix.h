@@ -18,7 +18,10 @@
 #include "module.h"
 
 class LED_Matrix {
+public:
+    Color_t data[8][8][8];
 
+    void Handler();
 };
 
 

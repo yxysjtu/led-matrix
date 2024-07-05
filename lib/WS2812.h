@@ -23,11 +23,13 @@ typedef struct{
     uint8_t g;
     uint8_t r;
     uint8_t b;
-} WS2812_color_t;
+} Color_t;
 
-extern WS2812_color_t ws2812_data[WS2812_LEN];
+extern Color_t ws2812_data[WS2812_LEN];
 
-extern WS2812_color_t violet;
+extern Color_t violet;
+
+Color_t float2RGB(float x); //x 0-1
 
 void WS2812_Handler();
 
