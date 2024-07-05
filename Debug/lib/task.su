@@ -1,0 +1,5 @@
+../lib/task.cpp:19:16:WS2812_color_t color_mul(WS2812_color_t, float)	24	static
+../lib/task.cpp:26:6:void LED_flow_set()	24	static
+../lib/task.cpp:36:6:void setup()	24	static
+../lib/task.cpp:50:6:void loop()	8	static
+../lib/task.cpp:56:6:void task_handler()	8	static

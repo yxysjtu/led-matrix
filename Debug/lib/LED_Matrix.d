@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
+lib/LED_Matrix.o: ../lib/LED_Matrix.cpp ../lib/LED_Matrix.h \
+ ../lib/module.h ../lib/WS2812.h ../lib/hal.h ../Core/Inc/main.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
  ../Core/Inc/stm32g0xx_hal_conf.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h \
@@ -28,7 +29,11 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_spi_ex.h \
- ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/gpio.h ../lib/task.h
+ ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/gpio.h
+../lib/LED_Matrix.h:
+../lib/module.h:
+../lib/WS2812.h:
+../lib/hal.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 ../Core/Inc/stm32g0xx_hal_conf.h:
@@ -62,4 +67,3 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Core/Inc/gpio.h:
-../lib/task.h:
