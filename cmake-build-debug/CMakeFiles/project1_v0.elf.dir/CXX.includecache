@@ -282,17 +282,9 @@ stm32g0xx.h
 stm32g0xx.h
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx.h
 
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.cpp
-LED_Matrix.h
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.h
-
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.h
 module.h
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/module.h
-
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.cpp
-WS2812.h
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h
 
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h
 hal.h

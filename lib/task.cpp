@@ -16,10 +16,21 @@
 
 //LED_Matrix led;
 
+WS2812_color_t color_mul(WS2812_color_t color, float a){
+    color.g = (int)((float)color.g * a);
+    color.r = (int)((float)color.r * a);
+    color.b = (int)((float)color.b * a);
+    return color;
+}
+
 void setup(){
-    for(int i = 0; i < WS2812_LEN; i++){
-        ws2812_data[i] = violet;
+    for(int i = 0; i < 24; i++){
+        for(int j = 0; j < 4; j++){
+            ws2812_data[i * 8 + j] = color_mul(violet, 0.33 * (float)j);
+            ws2812_data
+        }
     }
+
 }
 
 void loop(){

@@ -1495,7 +1495,7 @@ LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../..
 LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x7d38
+.debug_info     0x00000000     0x7d43
  .debug_info    0x00000000      0x481 CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
  .debug_info    0x00000481      0x41b CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj
  .debug_info    0x0000089c      0xace CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj
@@ -1511,9 +1511,9 @@ LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb
  .debug_info    0x0000426a      0xd47 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
  .debug_info    0x00004fb1     0x2298 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj
  .debug_info    0x00007249      0x91f CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
- .debug_info    0x00007b68      0x1d0 CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
+ .debug_info    0x00007b68      0x1db CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
 
-.debug_abbrev   0x00000000     0x1b49
+.debug_abbrev   0x00000000     0x1b5a
  .debug_abbrev  0x00000000      0x177 CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
  .debug_abbrev  0x00000177      0x1a9 CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj
  .debug_abbrev  0x00000320      0x1fc CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj
@@ -1529,7 +1529,7 @@ LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb
  .debug_abbrev  0x00001306      0x29a CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
  .debug_abbrev  0x000015a0      0x27f CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj
  .debug_abbrev  0x0000181f      0x1e7 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
- .debug_abbrev  0x00001a06      0x143 CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
+ .debug_abbrev  0x00001a06      0x154 CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
 
 .debug_aranges  0x00000000      0x740
  .debug_aranges
@@ -1583,7 +1583,7 @@ LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb
  .debug_ranges  0x00000688       0x20 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
  .debug_ranges  0x000006a8       0x20 CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
 
-.debug_line     0x00000000     0x7058
+.debug_line     0x00000000     0x7059
  .debug_line    0x00000000      0x28b CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
  .debug_line    0x0000028b      0x43d CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj
  .debug_line    0x000006c8      0x3e6 CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj
@@ -1599,7 +1599,7 @@ LOAD g:/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb
  .debug_line    0x000032e8      0xe18 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj
  .debug_line    0x00004100     0x28d8 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj
  .debug_line    0x000069d8      0x457 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
- .debug_line    0x00006e2f      0x229 CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
+ .debug_line    0x00006e2f      0x22a CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
 
 .debug_str      0x00000000     0x2791
  .debug_str     0x00000000      0x377 CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
