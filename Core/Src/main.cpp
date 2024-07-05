@@ -121,7 +121,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 
-  	HAL_Delay(1);
 
  	 for(uint8_t i = 0;i < j - 1; i++)
  	  {
