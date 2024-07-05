@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj"
+  "CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj"
   "CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj"
@@ -26,6 +28,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj"
   "CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
   "CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
+  "CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj"
   "project1_v0.elf"
   "project1_v0.elf.manifest"
   "project1_v0.elf.pdb"

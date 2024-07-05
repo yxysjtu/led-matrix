@@ -76,9 +76,22 @@ include CMakeFiles/project1_v0.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project1_v0.elf.dir/flags.make
 
+CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
+CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\gpio.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\gpio.c
+
+CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.i"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\gpio.c > CMakeFiles\project1_v0.elf.dir\Core\Src\gpio.c.i
+
+CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.s"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\gpio.c -o CMakeFiles\project1_v0.elf.dir\Core\Src\gpio.c.s
+
 CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj: ../Core/Src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\main.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\main.cpp
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.i: cmake_force
@@ -89,9 +102,22 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.s"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\main.cpp -o CMakeFiles\project1_v0.elf.dir\Core\Src\main.cpp.s
 
+CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
+CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj: ../Core/Src/spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\spi.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\spi.c
+
+CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.i"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\spi.c > CMakeFiles\project1_v0.elf.dir\Core\Src\spi.c.i
+
+CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.s"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\spi.c -o CMakeFiles\project1_v0.elf.dir\Core\Src\spi.c.s
+
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj: ../Core/Src/stm32g0xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\stm32g0xx_hal_msp.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\stm32g0xx_hal_msp.c
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.i: cmake_force
@@ -104,7 +130,7 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj: ../Core/Src/stm32g0xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\stm32g0xx_it.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\stm32g0xx_it.c
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.i: cmake_force
@@ -117,7 +143,7 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\syscalls.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\syscalls.c
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -130,7 +156,7 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.obj: ../Core/Src/sysmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\sysmem.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\sysmem.c
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -143,7 +169,7 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/sysmem.c.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.obj: ../Core/Src/system_stm32g0xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Src\system_stm32g0xx.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Src\system_stm32g0xx.c
 
 CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.i: cmake_force
@@ -156,12 +182,12 @@ CMakeFiles/project1_v0.elf.dir/Core/Src/system_stm32g0xx.c.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/Core/Startup/startup_stm32g030k8tx.s.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Core/Startup/startup_stm32g030k8tx.s.obj: ../Core/Startup/startup_stm32g030k8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building ASM object CMakeFiles/project1_v0.elf.dir/Core/Startup/startup_stm32g030k8tx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/project1_v0.elf.dir/Core/Startup/startup_stm32g030k8tx.s.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Core\Startup\startup_stm32g030k8tx.s.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Core\Startup\startup_stm32g030k8tx.s
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.i: cmake_force
@@ -174,7 +200,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c.
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c.i: cmake_force
@@ -187,7 +213,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_co
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c.i: cmake_force
@@ -200,7 +226,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dm
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c.i: cmake_force
@@ -213,7 +239,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dm
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c.i: cmake_force
@@ -226,7 +252,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_ex
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.c.i: cmake_force
@@ -239,7 +265,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fl
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c.i: cmake_force
@@ -252,7 +278,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_fl
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c.i: cmake_force
@@ -265,7 +291,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gp
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c.i: cmake_force
@@ -278,7 +304,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pw
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c.i: cmake_force
@@ -291,7 +317,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pw
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c.i: cmake_force
@@ -304,7 +330,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rc
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc_ex.c.i: cmake_force
@@ -317,7 +343,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rc
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_spi.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_spi.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c.i: cmake_force
@@ -330,7 +356,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_sp
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_spi_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_spi_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c.i: cmake_force
@@ -343,7 +369,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_sp
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.c.i: cmake_force
@@ -356,7 +382,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_ti
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim_ex.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim_ex.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.c.i: cmake_force
@@ -369,7 +395,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_ti
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_dma.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_dma.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.i: cmake_force
@@ -382,7 +408,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\project1_v0.elf.dir\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c.obj   -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c
 
 CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.i: cmake_force
@@ -395,7 +421,7 @@ CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc
 
 CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj: ../lib/LED_Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\lib\LED_Matrix.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\LED_Matrix.cpp
 
 CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.i: cmake_force
@@ -408,7 +434,7 @@ CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.s: cmake_force
 
 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj: ../lib/WS2812.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\lib\WS2812.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\WS2812.cpp
 
 CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.i: cmake_force
@@ -419,9 +445,24 @@ CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s"
 	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\WS2812.cpp -o CMakeFiles\project1_v0.elf.dir\lib\WS2812.cpp.s
 
+CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj: CMakeFiles/project1_v0.elf.dir/flags.make
+CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj: ../lib/task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project1_v0.elf.dir\lib\task.cpp.obj -c C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\task.cpp
+
+CMakeFiles/project1_v0.elf.dir/lib/task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1_v0.elf.dir/lib/task.cpp.i"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\task.cpp > CMakeFiles\project1_v0.elf.dir\lib\task.cpp.i
+
+CMakeFiles/project1_v0.elf.dir/lib/task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1_v0.elf.dir/lib/task.cpp.s"
+	G:\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\lib\task.cpp -o CMakeFiles\project1_v0.elf.dir\lib\task.cpp.s
+
 # Object files for target project1_v0.elf
 project1_v0_elf_OBJECTS = \
+"CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj" \
+"CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj" \
@@ -447,12 +488,15 @@ project1_v0_elf_OBJECTS = \
 "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj" \
 "CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj" \
-"CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
+"CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj" \
+"CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj"
 
 # External object files for target project1_v0.elf
 project1_v0_elf_EXTERNAL_OBJECTS =
 
+project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj
+project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj
@@ -479,9 +523,10 @@ project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj
+project1_v0.elf: CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/build.make
 project1_v0.elf: CMakeFiles/project1_v0.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable project1_v0.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\asus\Desktop\contest2024\project1\firmware\project1_v0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable project1_v0.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project1_v0.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/project1_v0.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/project1_v0.bin"

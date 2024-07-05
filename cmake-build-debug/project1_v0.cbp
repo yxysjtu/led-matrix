@@ -100,7 +100,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Inc/gpio.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Inc/main.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Inc/spi.h">
 			<Option target="project1_v0.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Inc/stm32g0xx_hal_conf.h">
@@ -109,7 +115,13 @@
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Inc/stm32g0xx_it.h">
 			<Option target="project1_v0.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/gpio.c">
+			<Option target="project1_v0.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/main.cpp">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/spi.c">
 			<Option target="project1_v0.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/stm32g0xx_hal_msp.c">
@@ -377,6 +389,24 @@
 			<Option target="project1_v0.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/device.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/hal.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/include.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/module.h">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.cpp">
+			<Option target="project1_v0.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.h">
 			<Option target="project1_v0.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/CMakeLists.txt">

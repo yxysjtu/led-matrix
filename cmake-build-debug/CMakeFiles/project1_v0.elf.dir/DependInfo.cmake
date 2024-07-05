@@ -27,6 +27,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../lib"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/gpio.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj"
+  "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/spi.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj"
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/stm32g0xx_hal_msp.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_hal_msp.c.obj"
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/stm32g0xx_it.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/stm32g0xx_it.c.obj"
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/syscalls.c" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/syscalls.c.obj"
@@ -73,6 +75,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/main.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.obj"
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/lib/LED_Matrix.cpp.obj"
   "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.obj"
+  "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.cpp" "C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/cmake-build-debug/CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

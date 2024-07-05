@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @FileName			    LED_Matrix.h
+  * @FileName			    task.h
   * @Description
   * @author                 Yu Xinyi
   * @note
@@ -12,14 +12,21 @@
   ******************************************************************************
 **/
 
-#ifndef PROJECT1_V0_LED_MATRIX_H
-#define PROJECT1_V0_LED_MATRIX_H
+#include "include.h"
 
-#include "module.h"
+//LED_Matrix led;
 
-class LED_Matrix {
+void setup(){
+    for(int i = 0; i < WS2812_LEN; i++){
+        ws2812_data[i] = violet;
+    }
+}
 
-};
+void loop(){
+
+}
 
 
-#endif //PROJECT1_V0_LED_MATRIX_H
+void task_handler(){ //1ms中断
+    if(HAL_GetTick() % 10 == 0) WS2812_Handler();
+}

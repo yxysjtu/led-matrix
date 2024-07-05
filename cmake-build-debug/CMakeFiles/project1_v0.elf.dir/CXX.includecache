@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../Core/Inc/gpio.h
+main.h
+../Core/Inc/main.h
+
 ../Core/Inc/main.h
 stm32g0xx_hal.h
 ../Core/Inc/stm32g0xx_hal.h
+
+../Core/Inc/spi.h
+main.h
+../Core/Inc/main.h
 
 ../Core/Inc/stm32g0xx_hal_conf.h
 stm32g0xx_hal_rcc.h
@@ -274,21 +282,51 @@ stm32g0xx.h
 stm32g0xx.h
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx.h
 
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/main.cpp
-main.h
-C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/Core/Src/main.h
-
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.cpp
 LED_Matrix.h
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.h
 
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.h
+module.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/module.h
 
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.cpp
 WS2812.h
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h
 
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h
+hal.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/hal.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/device.h
+LED_Matrix.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/LED_Matrix.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/hal.h
 main.h
 C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/main.h
+spi.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/spi.h
+gpio.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/gpio.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/include.h
+task.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.h
+hal.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/hal.h
+module.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/module.h
+device.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/device.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/module.h
+WS2812.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/WS2812.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.cpp
+include.h
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/include.h
+
+C:/Users/asus/Desktop/contest2024/project1/firmware/project1_v0/lib/task.h
 

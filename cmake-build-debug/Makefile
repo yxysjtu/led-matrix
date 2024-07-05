@@ -142,6 +142,33 @@ project1_v0.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/build
 .PHONY : project1_v0.elf/fast
 
+Core/Src/gpio.obj: Core/Src/gpio.c.obj
+
+.PHONY : Core/Src/gpio.obj
+
+# target to build an object file
+Core/Src/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.obj
+.PHONY : Core/Src/gpio.c.obj
+
+Core/Src/gpio.i: Core/Src/gpio.c.i
+
+.PHONY : Core/Src/gpio.i
+
+# target to preprocess a source file
+Core/Src/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.i
+.PHONY : Core/Src/gpio.c.i
+
+Core/Src/gpio.s: Core/Src/gpio.c.s
+
+.PHONY : Core/Src/gpio.s
+
+# target to generate assembly for a file
+Core/Src/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/gpio.c.s
+.PHONY : Core/Src/gpio.c.s
+
 Core/Src/main.obj: Core/Src/main.cpp.obj
 
 .PHONY : Core/Src/main.obj
@@ -168,6 +195,33 @@ Core/Src/main.s: Core/Src/main.cpp.s
 Core/Src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/main.cpp.s
 .PHONY : Core/Src/main.cpp.s
+
+Core/Src/spi.obj: Core/Src/spi.c.obj
+
+.PHONY : Core/Src/spi.obj
+
+# target to build an object file
+Core/Src/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.c.obj
+
+Core/Src/spi.i: Core/Src/spi.c.i
+
+.PHONY : Core/Src/spi.i
+
+# target to preprocess a source file
+Core/Src/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.i
+.PHONY : Core/Src/spi.c.i
+
+Core/Src/spi.s: Core/Src/spi.c.s
+
+.PHONY : Core/Src/spi.s
+
+# target to generate assembly for a file
+Core/Src/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/Core/Src/spi.c.s
+.PHONY : Core/Src/spi.c.s
 
 Core/Src/stm32g0xx_hal_msp.obj: Core/Src/stm32g0xx_hal_msp.c.obj
 
@@ -853,6 +907,33 @@ lib/WS2812.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/WS2812.cpp.s
 .PHONY : lib/WS2812.cpp.s
 
+lib/task.obj: lib/task.cpp.obj
+
+.PHONY : lib/task.obj
+
+# target to build an object file
+lib/task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/task.cpp.obj
+.PHONY : lib/task.cpp.obj
+
+lib/task.i: lib/task.cpp.i
+
+.PHONY : lib/task.i
+
+# target to preprocess a source file
+lib/task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/task.cpp.i
+.PHONY : lib/task.cpp.i
+
+lib/task.s: lib/task.cpp.s
+
+.PHONY : lib/task.s
+
+# target to generate assembly for a file
+lib/task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project1_v0.elf.dir\build.make CMakeFiles/project1_v0.elf.dir/lib/task.cpp.s
+.PHONY : lib/task.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -862,9 +943,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... project1_v0.elf
+	@echo ... Core/Src/gpio.obj
+	@echo ... Core/Src/gpio.i
+	@echo ... Core/Src/gpio.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/spi.obj
+	@echo ... Core/Src/spi.i
+	@echo ... Core/Src/spi.s
 	@echo ... Core/Src/stm32g0xx_hal_msp.obj
 	@echo ... Core/Src/stm32g0xx_hal_msp.i
 	@echo ... Core/Src/stm32g0xx_hal_msp.s
@@ -941,6 +1028,9 @@ help:
 	@echo ... lib/WS2812.obj
 	@echo ... lib/WS2812.i
 	@echo ... lib/WS2812.s
+	@echo ... lib/task.obj
+	@echo ... lib/task.i
+	@echo ... lib/task.s
 .PHONY : help
 
 

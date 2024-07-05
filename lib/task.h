@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @FileName			    LED_Matrix.h
+  * @FileName			    task.h
   * @Description
   * @author                 Yu Xinyi
   * @note
@@ -12,14 +12,21 @@
   ******************************************************************************
 **/
 
-#ifndef PROJECT1_V0_LED_MATRIX_H
-#define PROJECT1_V0_LED_MATRIX_H
+#ifndef PROJECT1_V0_TASK_H
+#define PROJECT1_V0_TASK_H
 
-#include "module.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-class LED_Matrix {
+void setup();
 
-};
+void loop();
 
+void task_handler();
 
-#endif //PROJECT1_V0_LED_MATRIX_H
+#ifdef __cplusplus
+}
+#endif
+
+#endif //PROJECT1_V0_TASK_H
