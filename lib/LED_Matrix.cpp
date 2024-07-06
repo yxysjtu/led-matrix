@@ -33,3 +33,8 @@ void LED_Matrix::Handler() {
         }
     }
 }
+
+void LED_Matrix::set_edge_point(int edge_index, int point_index, Color_t color) {
+    data[edge[edge_index][0]][edge[edge_index][1]][point_index] = color;
+    data[edge[edge_index][1]][edge[edge_index][0]][7 - point_index] = color;
+}

@@ -56,7 +56,9 @@ void WS2812_Handler(){
 Color_t float2RGB(float x)
 {
     Color_t color;
-    x = 1.0 - x;
+    //x = x - (int)(x / 2) * 2;
+    if(x > 1) x = 2 - x;
+    //x = 1.0 - x;
     // x由小到大的依次为：赤、橙、黄、绿、青、蓝，注意没有紫色
     //定义红色通道
     if (x < 5.0 / 12.0)
@@ -114,5 +116,12 @@ Color_t float2RGB(float x)
         color.b = 255;
     }
 
+    return color;
+}
+
+Color_t color_mul(Color_t color, float a){
+    color.g = (int)((float)color.g * a);
+    color.r = (int)((float)color.r * a);
+    color.b = (int)((float)color.b * a);
     return color;
 }

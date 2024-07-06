@@ -14,9 +14,11 @@
 
 #include "include.h"
 
-//#define TEST1
-//#define TEST2
-#define TEST3
+//#define TEST1 //点亮所有灯
+//#define TEST2 //线性流水
+//#define TEST3 //立方体静态
+//#define TEST4 //彩虹流水
+#define TEST5 //波浪
 
 
 #ifdef TEST1
@@ -40,12 +42,6 @@ void task_handler(){ //1ms中断
 
 #ifdef TEST2
 uint32_t delay_t = 100;
-Color_t color_mul(Color_t color, float a){
-    color.g = (int)((float)color.g * a);
-    color.r = (int)((float)color.r * a);
-    color.b = (int)((float)color.b * a);
-    return color;
-}
 
 void LED_flow_set()
 {
@@ -82,23 +78,6 @@ void task_handler(){ //1ms中断
 #ifdef TEST3
 LED_Matrix cube;
 
-int edge[12][2] = {
-        {0, 2}, {0, 1}, {0, 4},
-
-        {2, 6}, {2, 3},
-        {1, 5}, {1, 3},
-        {4, 6}, {4, 5},
-
-        {6, 7}, {5, 7}, {3, 7}
-};
-
-
-Color_t color_mul(Color_t color, float a){
-    color.g = (int)((float)color.g * a);
-    color.r = (int)((float)color.r * a);
-    color.b = (int)((float)color.b * a);
-    return color;
-}
 
 void setup(){
     Color_t c;
@@ -107,8 +86,8 @@ void setup(){
         c = float2RGB((float)i / 12);
         for(int j = 0; j < 8; j++){
             float brightness = 0.0029 * j * j * j;
-            cube.data[edge[i][0]][edge[i][1]][j] = color_mul(c, brightness);
-            cube.data[edge[i][1]][edge[i][0]][7 - j] = color_mul(c, brightness);
+            cube.data[cube.edge[i][0]][cube.edge[i][1]][j] = color_mul(c, brightness);
+            cube.data[cube.edge[i][1]][cube.edge[i][0]][7 - j] = color_mul(c, brightness);
         }
     }
 
@@ -116,6 +95,131 @@ void setup(){
 
 void loop(){
 
+}
+
+
+void task_handler(){ //1ms中断
+    if(HAL_GetTick() % 10 == 0) WS2812_Handler();
+
+    if(HAL_GetTick() % 10 == 0) cube.Handler();
+}
+#endif
+
+#ifdef TEST4
+LED_Matrix cube;
+
+float init_phase = 0, dx = 0.1, dt = 0.002;
+
+void color_flow_next(){
+    Color_t c;
+
+    float phase = init_phase;
+    for(int i = 0; i < 8; i++){
+        c = float2RGB(phase);
+        for(int j = 0; j < 3; j++){
+            cube.set_edge_point(j, i, c);
+        }
+        phase += dx;
+        if(phase > 2) phase -= 2;
+    }
+
+    for(int i = 0; i < 8; i++){
+        c = float2RGB(phase);
+        for(int j = 3; j < 9; j++){
+            cube.set_edge_point(j, i, c);
+        }
+        phase += dx;
+        if(phase > 2) phase -= 2;
+    }
+
+    for(int i = 0; i < 8; i++){
+        c = float2RGB(phase);
+        for(int j = 9; j < 12; j++){
+            cube.set_edge_point(j, i, c);
+        }
+        phase += dx;
+        if(phase > 2) phase -= 2;
+    }
+
+    init_phase += dt;
+    if(init_phase > 2) init_phase -= 2;
+}
+
+uint32_t t0, t1;
+void setup(){
+    t0 = HAL_GetTick();
+    color_flow_next();
+    t1 = HAL_GetTick() - t0;
+}
+
+void loop(){
+    t0 = HAL_GetTick();
+    color_flow_next();
+    t1 = HAL_GetTick() - t0;
+}
+
+
+void task_handler(){ //1ms中断
+    if(HAL_GetTick() % 10 == 0) WS2812_Handler();
+
+    if(HAL_GetTick() % 10 == 0) cube.Handler();
+}
+#endif
+
+#ifdef TEST5
+LED_Matrix cube;
+
+float init_phase = 0, phase, dx = 0.1, dt = 0.004;
+
+Color_t next_color(){
+    Color_t c0 = violet, c;
+    float p1 = phase;
+    if(p1 > 1) p1 = 2 - p1;
+    c = color_mul(c0, p1 * p1 * p1);
+    phase += dx;
+    if(phase > 2) phase -= 2;
+    return c;
+}
+void color_flow_next(){
+    Color_t c;
+
+    phase = init_phase;
+    for(int i = 0; i < 8; i++){
+        c = next_color();
+        for(int j = 0; j < 3; j++){
+            cube.set_edge_point(j, i, c);
+        }
+    }
+
+    for(int i = 0; i < 8; i++){
+        c = next_color();
+        for(int j = 3; j < 9; j++){
+            cube.set_edge_point(j, i, c);
+        }
+    }
+
+    for(int i = 0; i < 8; i++){
+        c = next_color();
+        for(int j = 9; j < 12; j++){
+            cube.set_edge_point(j, i, c);
+        }
+    }
+
+    init_phase += dt;
+    if(init_phase > 2) init_phase -= 2;
+}
+
+uint32_t t0, t1;
+void setup(){
+    t0 = HAL_GetTick();
+    color_flow_next();
+    t1 = HAL_GetTick() - t0;
+}
+
+void loop(){
+    t0 = HAL_GetTick();
+    color_flow_next();
+    t1 = HAL_GetTick() - t0;
 }
 
 

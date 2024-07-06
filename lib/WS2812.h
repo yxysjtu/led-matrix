@@ -30,6 +30,7 @@ extern Color_t ws2812_data[WS2812_LEN];
 extern Color_t violet;
 
 Color_t float2RGB(float x); //x 0-1
+Color_t color_mul(Color_t color, float a);
 
 void WS2812_Handler();
 
