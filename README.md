@@ -74,8 +74,22 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 * 最后程序里加入`HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_x, data, data_len);`（这里会发现因为是循环发送，cube默认开启的DMA中断显得没有什么意义，可以把DMA_init里面的NVIC函数关掉，并且把`HAL_TIM_PWM_Start_DMA`里面的`HAL_DMA_Start_IT`改成`HAL_DMA_Start`，不要在传输完成触发中断，开销小一点）
   
 ### 工程架构
-#### 驱动与业务逻辑的解耦
+![image](https://github.com/yxysjtu/led-matrix/assets/53338300/55b24ade-14e1-47ab-913b-e3442ca61a4d)
 
+#### 驱动与业务逻辑的解耦
+* 在`task.cpp`里写业务逻辑：
+	* `setup()`初始化
+ 	* `loop()`主循环
+  	* `task_handler()`1ms中断，用于放每个驱动的`Handler()`
+* 用`include.h`放所有头文件
+* 驱动分层思想：
+  1. `hal.h`放所有跟芯片级的接口
+  2. `module.h`放所有基于芯片级接口的驱动，比如WS2812的驱动
+  3. `device.h`放所有基于`module.h`的驱动的高层设备，比如光立方的控制类
+ 
+思考：
+1. 驱动一般有两种写法，一种是直接命令，就是直接调用通信的函数发送命令/数据；一种是Handler思想，就是用户只是修改状态变量/数据变量，通信函数在定时器中断里定时发送这些数据；请思考这两者的区别，分别优劣势和应用场景
+2. 任务逻辑一般有两种写法，一种是阻塞式线性写下来，控制时间间隔的地方加delay；一种是状态机，任务放在定时器中断里，用状态变量控制时序。请比较两者优劣势与应用场景。
 
 
 
