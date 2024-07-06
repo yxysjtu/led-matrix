@@ -49,6 +49,7 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 * 完成的整个框
 ![5](https://github.com/yxysjtu/led-matrix/assets/53338300/6b2e8f8c-e5d9-45f9-b2fb-d099180f6278)
 * 贴上半透镜的最终效果
+![7](https://github.com/yxysjtu/led-matrix/assets/53338300/cf19c65e-cfa3-47e8-a610-819f8ca074d2)
 
 ## 硬件
 ### 原理图设计
