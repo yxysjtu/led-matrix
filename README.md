@@ -73,6 +73,10 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
   ![image](https://github.com/yxysjtu/led-matrix/assets/53338300/5e59059a-ef53-4a99-88ef-f7283a724245)
 
 * 最后程序里加入`HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_x, data, data_len);`（这里会发现因为是循环发送，cube默认开启的DMA中断显得没有什么意义，可以把DMA_init里面的NVIC函数关掉，并且把`HAL_TIM_PWM_Start_DMA`里面的`HAL_DMA_Start_IT`改成`HAL_DMA_Start`，不要在传输完成触发中断，开销小一点）
+
+**测试产生不同宽度的脉冲**：
+  ![3563cbb056b3a688bff2a0871152ec5](https://github.com/yxysjtu/led-matrix/assets/53338300/7840a741-c7b5-4498-9ce0-c619669e7957)
+
   
 ### 工程架构
 ![image](https://github.com/yxysjtu/led-matrix/assets/53338300/55b24ade-14e1-47ab-913b-e3442ca61a4d)
