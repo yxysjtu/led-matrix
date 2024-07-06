@@ -46,5 +46,6 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 #### 定时器DMA PWM驱动WS2812
 
 ### 工程架构
+#### 驱动与业务逻辑的解耦
 
 
