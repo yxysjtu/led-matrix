@@ -71,7 +71,7 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 * 然后配置DMA。开启定时器的DMA_Request（注意这里需要选一个有DMA_Request的定时器。这里DMA_Request的源自动配成OC event。在寄存器里是DIER的OC event触发该通道的DMA Request），配置为mem2periph，halfword，circular传输
   ![image](https://github.com/yxysjtu/led-matrix/assets/53338300/5e59059a-ef53-4a99-88ef-f7283a724245)
 
-* 最后程序里加入`HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_x, data, data_len);`
+* 最后程序里加入`HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_x, data, data_len);`（这里会发现因为是循环发送，cube默认开启的DMA中断显得没有什么意义，可以把DMA_init里面的NVIC函数关掉，并且把`HAL_TIM_PWM_Start_DMA`里面的`HAL_DMA_Start_IT`改成`HAL_DMA_Start`，不要在传输完成触发中断，开销小一点）
   
 ### 工程架构
 #### 驱动与业务逻辑的解耦
