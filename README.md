@@ -66,6 +66,7 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 
 #### 定时器DMA PWM驱动WS2812
 * 首先WS2812一个bit宽度是1.25us，分辨率0.25us，所以定时器分频到4M，ARR取5-1。开通道PWM_Generation CHx（注意不是output compare）
+  
   ![image](https://github.com/yxysjtu/led-matrix/assets/53338300/da806b90-f650-42cb-a359-f625a229c187)
 
 * 然后配置DMA。开启定时器的DMA_Request（注意这里需要选一个有DMA_Request的定时器。这里DMA_Request的源自动配成OC event。在寄存器里是DIER的OC event触发该通道的DMA Request），配置为mem2periph，halfword，circular传输
