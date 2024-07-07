@@ -53,10 +53,66 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 
 ## 硬件
 ### 原理图设计
+* 单片机最小系统：
+  1. MCU:STM32G030K8T6(LQFP32封装)
+  2. 电源:5V转3.3V线性稳压器
+  3. 时钟:8Mhz外部晶振
+  4. 复位电路
+     
+* 其他外设：
+  1. 调试接口：2*5P简易牛角座接ST-LINK32，3.3V供电
+  2. 调试外设：LED、按键
+  3. 串口及控制信号线
+
+* 原理图
+![image](https://github.com/yxysjtu/led-matrix/assets/110826577/757f6ee4-f713-4962-a031-fe59a367e9e5)
 
 ### PCB设计
+* 设计思路
+	* 元件布局
+		1. 功能模块化：将功能相近或关联的元件尽可能集中布置，减少走线长度，提高电路稳定性。
+  		2. 机械结构：考虑PCB的尺寸、形状、安装孔位置等与实际产品的匹配。
+  	* 走线设计
+		1. 优先布置电源线，确保电源的低阻抗和可靠性。使用较宽的走线或铜箔平面。
+  		2. 高频信号线与其他信号线或电源线保持足够的间距，避免相互干扰。
+* 经验与反思
+	1. 将重心放在PCB布局上，极大减轻布线难度，如将2×10排针换为左右两侧的1×10排针可避免交叉走线，走线更合理（左图修改前，右图修改后）
+
+	   <center class="half">
+	    <img src="https://github.com/yxysjtu/led-matrix/assets/110826577/070525e4-fc38-4607-9a9c-d458177b719f" width="400"/><img src="https://github.com/yxysjtu/led-matrix/assets/110826577/d4327cb7-e5bc-4dbc-8f81-14f93c36982c" width="400"/>
+	   </center>
+	2. 避免换层/打过孔
+ 	3. 避免直角布线。因为线宽改变会引起阻抗改变，阻抗不连续造成信号反射。（该问题在高频电路中需着重考虑，但出于设计规范尽量还是45°拐角走线）
+	4. 信号传输线尽可能短
+
+* PCB设计图
+<center class="half">
+    <img src="https://github.com/yxysjtu/led-matrix/assets/110826577/79ded06f-657a-4457-b15c-2b08f0575682" width="400"/><img src="https://github.com/yxysjtu/led-matrix/assets/110826577/ae93919e-f0da-4b59-9062-5ca092447f0c" width="400"/>
+</center>
+
+
 
 ### 焊接
+* 错误及解决方法
+	* 错误：轻触开关两脚的买错成四脚的
+ 	* 解决方法：利用万用表的二极管蜂鸣档检测轻触开关四脚的连通情况，将未按下开关时断开的两脚焊接在两个焊盘上
+    	![image](https://github.com/yxysjtu/led-matrix/assets/110826577/ae343e28-c4a1-43fc-a17f-59ab125f8feb)
+
+* 注意点
+  1. 首先焊接难度较高的主控芯片，注意避免引脚连锡
+  2. 尽量先焊接贴式元件
+  3. 使用锡膏后记得用电烙铁吸去多余的锡
+  4. 确保芯片放置方向正确
+  5. 焊接排针时确保焊盘与锡完全贴合，避免上锡过于饱满
+   ![a1a945c6e6465872397e519ada0f4c2](https://github.com/yxysjtu/led-matrix/assets/110826577/14af6123-ac3d-45ed-861c-2bfbf7a931fe)
+
+
+* 焊接成果图
+![f8195295d962d2e131820562d57f187](https://github.com/yxysjtu/led-matrix/assets/110826577/0cc76ebf-4192-4722-8b5f-2ee842635fe7)
+
+* 焊接完成后用点灯实验测试，单片机正常运行
+![672c5d9aec70102060e3a62bca5ef2a](https://github.com/yxysjtu/led-matrix/assets/110826577/a08dd33d-375a-4896-916e-b0c137d4bc17)
+
 
 ## 软件
 ### 驱动原理
