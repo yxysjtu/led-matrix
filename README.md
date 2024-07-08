@@ -117,8 +117,31 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 ## 软件
 ### 驱动原理
 #### WS2812通信
+![image](https://github.com/yxysjtu/led-matrix/assets/53338300/b90b431f-3e89-4d45-bceb-23eb05493eb6)
+
+图1 WS2812B电气结构
+WS2812B单个LED灯的结构如图1，VDD为+5V电源，VSS接地，DIN为信号输入，DOUT为信号输出。根据WS2812B的数据手册，RGB的二进制编码通过不同长度的波形来表示，具体要求如图2所示。
+![image](https://github.com/yxysjtu/led-matrix/assets/53338300/8b6df388-7ccd-42de-b30b-0ad6da202eb0)
+
+图2 WS2812B信号波形
+其中T0H和T1L的持续时间为0.25µs，T0L和T1H的持续时间为1µs，都允许有±150ns的误差，RESET码为持续50µs以上的低电平。对于每一个LED灯，需要传输表示GRB的3字节数据，即24位二进制信息，用上述的波形进行表示。我们的项目采用的WS2812B灯带采用级联的方法连接，在电气上，192个LED灯为并联连接，在信号传输上，采用串联连接。控制信号从第一个LED的DIN传入，锁存前24位信息，并将剩下的信息从DOUT传输到下一个灯的DIN每次，即控制信号每经过一个灯，减少24位。当WS2812B检测到50µs以上的低电平，即RESET码时，数据停止传输，当前的RGB信息将被锁存在所有的LED灯上，灯带的状态保持不变。对于用户而言，我们只需要对每一个灯带依次进行GRB编码，编码结束后传输RESET码锁存信号，即可改变灯带中所有LED的状态。
 
 #### SPI驱动WS2812
+本项目通过SPI通信总线驱动WS2812。在MCU处于SPI通信的主模式时，MOSI信号线实际为受SCK时钟信号控制时序的比特流，通过调整SCK时钟信号的频率，即MCU的主频，并进行适当的分频，即可产生符合图2所示的波形。本项目使用的MCU为STM32G030K8T6，使用16MHz的内部晶振，通过PLL倍频和分频，设定系统的主频为50MHz。
+
+![image](https://github.com/yxysjtu/led-matrix/assets/53338300/e12aab93-46ab-4dcd-b120-7ad27913363c)
+
+图3 STM32G030K8T6的时钟树设置
+
+在SPI配置中，设定每次8位传输，高位先发，SPI时钟16倍预分频，CPOL=0，CPHA=1，以满足WS2812的通信要求。此时SPI的波特率为3.125Mbit/s，即每一位传输需要的时间为0.32µs。
+
+![image](https://github.com/yxysjtu/led-matrix/assets/53338300/23472fab-aa6d-4725-b04f-c7464921e3ea)
+
+图4 SPI通信配置
+
+在该通信协议下，WS2812的0码可表示为1000B，1码可表示为0001B，即1位数据膨胀为SPI中的4位。
+接下来编写驱动库。先定义结构体`Color_t`，存储每一个LED的RGB数据。由此可以编写函数`WS2812_send`和`WS2812_reset`，`WS2812_send`的参数为`Color_t`类型的数据，用于向灯带传输一个LED灯的RGB数据，24位一起传输，从而避免了调用函数时的时间间隔导致WS2812误认成RESET码。`WS2812_reset`无参数，传输一段低电平，锁存信号。在这两个函数的基础上，可以编写`WS2812_Handler`函数。创建`Color_t`类型的数组`ws2812_data`，存储灯带192个WS2812灯的RGB数据。WS2812_Handler函数调用WS2812_send依次传输每个LED灯的数据，最后调用WS2812_reset锁存数据。根据SPI通信设置，调用一次WS2812_Handler需要的时间为：24*192*4*0.32µs+50µs = 5948.24µs至此，驱动函数编写完成，在systick中断服务程序中每10ms调用。上层用户只需要在业务逻辑程序中改变ws2812_data中的数据内容，即可实现深渊镜显示效果的变化。
+
 
 #### 定时器DMA PWM驱动WS2812
 * 首先WS2812一个bit宽度是1.25us，分辨率0.25us，所以定时器分频到4M，ARR取5-1。开通道PWM_Generation CHx（注意不是output compare）
