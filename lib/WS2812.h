@@ -28,10 +28,13 @@ typedef struct{
 extern Color_t ws2812_data[WS2812_LEN];
 
 extern Color_t violet;
+extern uint8_t ws2812_data_DMA[WS2812_LEN*3*4];
 
 Color_t float2RGB(float x); //x 0-1
 Color_t color_mul(Color_t color, float a);
 
 void WS2812_Handler();
+void WS2812_Handler_DMA();
+void WS2812_color_set(Color_t color, uint8_t num);
 
 #endif //PROJECT1_V0_WS2812_H

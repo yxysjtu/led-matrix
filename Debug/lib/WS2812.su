@@ -1,3 +1,7 @@
-../lib/WS2812.cpp:21:6:void WS2812_reset()	8	static
-../lib/WS2812.cpp:26:6:void WS2812_send(WS2812_color_t)	48	static
-../lib/WS2812.cpp:49:6:void WS2812_Handler()	16	static
+../lib/WS2812.cpp:23:6:void WS2812_reset()	8	static
+../lib/WS2812.cpp:28:6:void WS2812_send(Color_t)	48	static
+../lib/WS2812.cpp:52:6:void WS2812_Handler_DMA()	8	static
+../lib/WS2812.cpp:57:6:void WS2812_color_set(Color_t, uint8_t)	32	static
+../lib/WS2812.cpp:80:6:void WS2812_Handler()	16	static
+../lib/WS2812.cpp:88:9:Color_t float2RGB(float)	24	static
+../lib/WS2812.cpp:154:9:Color_t color_mul(Color_t, float)	24	static

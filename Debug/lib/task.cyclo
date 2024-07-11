@@ -1,5 +1,8 @@
-../lib/task.cpp:19:16:WS2812_color_t color_mul(WS2812_color_t, float)	1
-../lib/task.cpp:26:6:void LED_flow_set()	2
-../lib/task.cpp:36:6:void setup()	3
-../lib/task.cpp:50:6:void loop()	1
-../lib/task.cpp:56:6:void task_handler()	2
+../lib/LED_Matrix.h:20:7:LED_Matrix::LED_Matrix()	1
+../lib/task.cpp:174:9:Color_t next_color()	3
+../lib/task.cpp:183:6:void color_flow_next()	8
+../lib/task.cpp:213:6:void setup()	1
+../lib/task.cpp:219:6:void loop()	1
+../lib/task.cpp:226:6:void task_handler()	3
+../lib/task.cpp:230:1:void __static_initialization_and_destruction_0(int, int)	3
+../lib/task.cpp:230:1:cpp)	1
