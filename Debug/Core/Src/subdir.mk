@@ -10,7 +10,6 @@ CPP_SRCS += \
 C_SRCS += \
 ../Core/Src/dma.c \
 ../Core/Src/gpio.c \
-../Core/Src/main.c \
 ../Core/Src/spi.c \
 ../Core/Src/stm32g0xx_hal_msp.c \
 ../Core/Src/stm32g0xx_it.c \
@@ -21,7 +20,6 @@ C_SRCS += \
 C_DEPS += \
 ./Core/Src/dma.d \
 ./Core/Src/gpio.d \
-./Core/Src/main.d \
 ./Core/Src/spi.d \
 ./Core/Src/stm32g0xx_hal_msp.d \
 ./Core/Src/stm32g0xx_it.d \

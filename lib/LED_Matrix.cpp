@@ -24,13 +24,13 @@ void LED_Matrix::Handler() {
 
     for(int i = 0; i < 12; i++){
         for(int j = 0; j < 8; j++){
-            ws2812_data[i * 8 + j] = data[point_list1[i]][point_list1[i + 1]][j];
+            //ws2812_data[i * 8 + j] = data[point_list1[i]][point_list1[i + 1]][j];
             WS2812_color_set(data[point_list1[i]][point_list1[i + 1]][j], i * 8 + j);
         }
     }
     for(int i = 0; i < 12; i++){
         for(int j = 0; j < 8; j++){
-            ws2812_data[(i + 12) * 8 + j] = data[point_list2[i]][point_list2[i + 1]][j];
+            //ws2812_data[(i + 12) * 8 + j] = data[point_list2[i]][point_list2[i + 1]][j];
             WS2812_color_set(data[point_list2[i]][point_list2[i + 1]][j], (i + 12) * 8 + j);
         }
     }
