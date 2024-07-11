@@ -1,4 +1,4 @@
-![1](https://github.com/yxysjtu/led-matrix/assets/53338300/2c73584a-ae29-4b71-adb9-f9ddc497dbf6)
+![丝印图-正面](https://github.com/yxysjtu/led-matrix/assets/53338300/eed8cd48-7071-4e65-a030-e11c86d0da18)![1](https://github.com/yxysjtu/led-matrix/assets/53338300/2c73584a-ae29-4b71-adb9-f9ddc497dbf6)
 # 无限深渊光立方体
 
 难度：⭐ （难度全点在灯带焊接上了）
@@ -142,6 +142,7 @@ WS2812B单个LED灯的结构如图1，VDD为+5V电源，VSS接地，DIN为信号
 在该通信协议下，WS2812的0码可表示为1000B，1码可表示为0001B，即1位数据膨胀为SPI中的4位。
 接下来编写驱动库。先定义结构体`Color_t`，存储每一个LED的RGB数据。由此可以编写函数`WS2812_send`和`WS2812_reset`，`WS2812_send`的参数为`Color_t`类型的数据，用于向灯带传输一个LED灯的RGB数据，24位一起传输，从而避免了调用函数时的时间间隔导致WS2812误认成RESET码。`WS2812_reset`无参数，传输一段低电平，锁存信号。在这两个函数的基础上，可以编写`WS2812_Handler`函数。创建`Color_t`类型的数组`ws2812_data`，存储灯带192个WS2812灯的RGB数据。WS2812_Handler函数调用WS2812_send依次传输每个LED灯的数据，最后调用WS2812_reset锁存数据。根据SPI通信设置，调用一次WS2812_Handler需要的时间为：24*192*4*0.32µs+50µs = 5948.24µs至此，驱动函数编写完成，在systick中断服务程序中每10ms调用。上层用户只需要在业务逻辑程序中改变ws2812_data中的数据内容，即可实现深渊镜显示效果的变化。
 
+### SPI DMA
 
 #### 定时器DMA PWM驱动WS2812
 * 首先WS2812一个bit宽度是1.25us，分辨率0.25us，所以定时器分频到4M，ARR取5-1。开通道PWM_Generation CHx（注意不是output compare）
