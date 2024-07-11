@@ -220,12 +220,15 @@ void loop(){
     t0 = HAL_GetTick();
     color_flow_next();
     t1 = HAL_GetTick() - t0;
+    if(HAL_GetTick() % 10 == 0){
+        WS2812_Handler();
+        cube.Handler();
+    }
+
 }
 
 
 void task_handler(){ //1ms中断
-    if(HAL_GetTick() % 10 == 0) WS2812_Handler();
 
-    if(HAL_GetTick() % 10 == 0) cube.Handler();
 }
 #endif
