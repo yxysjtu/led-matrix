@@ -1,4 +1,4 @@
-![丝印图-正面](https://github.com/yxysjtu/led-matrix/assets/53338300/eed8cd48-7071-4e65-a030-e11c86d0da18)![1](https://github.com/yxysjtu/led-matrix/assets/53338300/2c73584a-ae29-4b71-adb9-f9ddc497dbf6)
+![1](https://github.com/yxysjtu/led-matrix/assets/53338300/2c73584a-ae29-4b71-adb9-f9ddc497dbf6)
 # 无限深渊光立方体
 
 难度：⭐ （难度全点在灯带焊接上了）
