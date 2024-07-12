@@ -96,7 +96,7 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
 * 错误及解决方法
 	* 错误：轻触开关两脚的买错成四脚的
  	* 解决方法：利用万用表的二极管蜂鸣档检测轻触开关四脚的连通情况，将未按下开关时断开的两脚焊接在两个焊盘上
-    	![image](https://github.com/yxysjtu/led-matrix/assets/110826577/ae343e28-c4a1-43fc-a17f-59ab125f8feb)
+   <img src="https://github.com/yxysjtu/led-matrix/assets/110826577/ae343e28-c4a1-43fc-a17f-59ab125f8feb" width="400"/>
 
 * 注意点
   1. 首先焊接难度较高的主控芯片，注意避免引脚连锡
@@ -104,14 +104,14 @@ https://github.com/yxysjtu/led-matrix/assets/53338300/0877f13f-39b3-478c-a3bc-68
   3. 使用锡膏后记得用电烙铁吸去多余的锡
   4. 确保芯片放置方向正确
   5. 焊接排针时确保焊盘与锡完全贴合，避免上锡过于饱满
-   ![a1a945c6e6465872397e519ada0f4c2](https://github.com/yxysjtu/led-matrix/assets/110826577/14af6123-ac3d-45ed-861c-2bfbf7a931fe)
+<img src="https://github.com/yxysjtu/led-matrix/assets/110826577/14af6123-ac3d-45ed-861c-2bfbf7a931fe" width="400"/>
 
 
 * 焊接成果图
-![f8195295d962d2e131820562d57f187](https://github.com/yxysjtu/led-matrix/assets/110826577/0cc76ebf-4192-4722-8b5f-2ee842635fe7)
+<img src="https://github.com/yxysjtu/led-matrix/assets/110826577/0cc76ebf-4192-4722-8b5f-2ee842635fe7" width="400"/>
 
 * 焊接完成后用点灯实验测试，单片机正常运行
-![672c5d9aec70102060e3a62bca5ef2a](https://github.com/yxysjtu/led-matrix/assets/110826577/a08dd33d-375a-4896-916e-b0c137d4bc17)
+<img src="https://github.com/yxysjtu/led-matrix/assets/110826577/a08dd33d-375a-4896-916e-b0c137d4bc17" width="400"/>
 
 
 ## 软件
